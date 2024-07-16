@@ -1,0 +1,43 @@
+.link-animation {
+  display: inline-flex;
+  width: fit-content;
+  background-image: linear-gradient(
+    to right,
+    #007acc,
+    #0c98eb 50%,
+    #0c98eb 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+ #2e86c1,
+    #2e86c1 50%,
+    #54b3d6 50%
+*/
+
+.link-animation:before {
+  content: "";
+  background: #007acc;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-animation:hover {
+  background-position: 0;
+}
+
+.link-animation:hover::before {
+  width: 100%;
+}

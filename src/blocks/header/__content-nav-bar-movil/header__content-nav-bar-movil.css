@@ -1,0 +1,40 @@
+/*
+.header__content-nav-bar-movil {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  visibility: hidden;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0%;
+  backdrop-filter: blur(4px);
+  background-color: transparent;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.header__content-nav-bar-movil_visibility-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+*/
+.header__content-nav-bar-movil {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  visibility: hidden;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(4px);
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.header__content-nav-bar-movil_visibility-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}

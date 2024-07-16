@@ -1,0 +1,107 @@
+.project__images {
+  padding-top: 42%;
+  display: block;
+  position: relative;
+}
+
+/*
+.project__images::after {
+  display: block;
+  padding-top: 45%;
+  content: "";
+}
+*/
+
+.project__images div {
+  border: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+/*
+.project:nth-child(1) .project__images div {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+*/
+
+.project__images div:nth-child(1) {
+  height: 100%;
+  width: 66.5%;
+  left: 0;
+}
+
+.project__images div:nth-child(2) {
+  height: 80%;
+  /*
+  width: 28%;
+  right: 10%;
+  */
+  width: 25.65%;
+  right: 14%;
+}
+
+.project__images div:nth-child(3) {
+  height: 65%;
+  width: 18%;
+  /*right: 0;*/
+  right: 1rem;
+}
+/*
+.project__images div:nth-child(1) {
+  width: 92%;
+}
+
+.project__images div:nth-child(2) {
+  height: 70%;
+  left: 62%;
+}
+
+.project__images div:nth-child(3) {
+  height: 60%;
+  right: 0;
+}
+*/
+/*
+.project:nth-child(1) .project__images div {
+  left: unset;
+  width: 100%;
+}
+*/
+
+/*
+.project__images div:nth-child(2) {
+  right: 0;
+  bottom: 0;
+}
+
+.project__images div:nth-child(3) {
+  right: 0;
+  bottom: 0;
+}
+*/
+
+/*
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project__images {
+    width: 100%;
+  }
+
+  .project:nth-child(1) .project__images div {
+    width: unset;
+    height: 100%;
+  }
+}
+*/
+
+@media screen and (max-width: 768px) {
+  .project:nth-child(1) .project__images div {
+    height: 100%;
+    width: 100%;
+  }
+}

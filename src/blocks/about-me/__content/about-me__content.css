@@ -1,0 +1,10 @@
+.about-me__content {
+  align-self: center;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me__content {
+    padding-bottom: 40px;
+  }
+}

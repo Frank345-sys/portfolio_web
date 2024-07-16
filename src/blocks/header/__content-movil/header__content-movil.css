@@ -1,0 +1,14 @@
+.header__content-movil {
+  display: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .header__content-movil {
+    display: flex;
+  }
+}

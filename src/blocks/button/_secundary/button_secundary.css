@@ -1,0 +1,6 @@
+.button_secundary {
+  color: var(--text-color-btn-s);
+  border: 2px solid #3e3e42;
+  /*background-color: transparent;
+  border: 2px solid var(--border-color);*/
+}

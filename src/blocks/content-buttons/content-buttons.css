@@ -1,0 +1,10 @@
+.content-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-buttons {
+    gap: 10px;
+  }
+}

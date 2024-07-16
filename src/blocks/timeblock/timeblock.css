@@ -1,0 +1,30 @@
+.timeblock {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.timeblock:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+.timeblock:nth-child(3n + 1) .timeblock__content {
+  padding-left: 60px;
+}
+
+.timeblock:nth-child(3n + 2) .timeblock__content {
+  padding-right: 60px;
+}
+
+.timeblock:nth-child(3n + 3) .timeblock__content {
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeblock:nth-child(n) {
+    flex-direction: row-reverse;
+  }
+  .timeblock:nth-child(n) .timeblock__content {
+    padding-left: 40px;
+  }
+}

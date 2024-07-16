@@ -1,0 +1,26 @@
+/*
+.interactive-box_position-4 {
+  transform: translate3d(0, 0, 6rem);
+  animation: interactive-box_position-4 3s ease-in-out infinite;
+}
+
+@keyframes interactive-box_position-4 {
+  0%,
+  100% {
+    transform: translate3d(0, 0rem, 6rem);
+  }
+  50% {
+    transform: translate3d(0, 1rem, 6rem);
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@media screen and (max-width: 768px) {
+  .interactive-box_position-4 {
+    animation-play-state: paused;
+  }
+}
+*/

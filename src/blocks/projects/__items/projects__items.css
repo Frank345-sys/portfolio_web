@@ -1,0 +1,22 @@
+.projects__items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/*
+.projects__items .project:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  
+  background-color: #3e3e42;
+}
+*/
+/*
+  background-color: #2d2e32;
+  */

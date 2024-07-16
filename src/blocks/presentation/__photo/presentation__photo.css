@@ -1,0 +1,35 @@
+.presentation__photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.presentation__photo img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: shineBlue 2s infinite;
+}
+
+@keyframes shineBlue {
+  from {
+    box-shadow: 0 0 40px #2657f6;
+  }
+  50% {
+    box-shadow: 0 0 50px #2657f6;
+  }
+  to {
+    box-shadow: 0 0 40px #2657f6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation__photo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

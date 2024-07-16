@@ -1,0 +1,17 @@
+.trajectory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  /*padding: 50px;*/
+}
+
+/*
+
+@media screen and (max-width: 768px) {
+  .trajectory {
+    padding: 40px;
+  }
+}
+*/

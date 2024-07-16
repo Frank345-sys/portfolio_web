@@ -1,0 +1,26 @@
+.timeblock__content {
+  display: flex;
+  position: relative;
+  gap: 15px;
+  flex-direction: column;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .timeblock__content {
+    width: 100%;
+  }
+}
+
+/*
+.timeblock__content(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+  .timeblock:nth-child(n) {
+    flex-direction: row-reverse;
+  }
+}
+*/

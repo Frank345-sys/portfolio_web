@@ -1,0 +1,10 @@
+.footer__list {
+  width: fit-content;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.footer__list li i {
+  font-size: 2rem;
+}

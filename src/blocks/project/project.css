@@ -1,0 +1,59 @@
+.project {
+  max-width: 1300px;
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+/*
+.project::before {
+  content: "";
+  margin-bottom: 25px;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+*/
+/*
+.project:nth-child(2n + 2) {
+  flex-direction: row-reverse;
+}
+*/
+
+/*
+.project:nth-child(2n + 2) .project__description {
+  border: 1px solid red;
+}
+
+.project:nth-child(2n + 2) .project__images {
+  border: 1px solid blue;
+}
+*/
+
+/*
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .project:nth-child(2n + 2) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .project:nth-child(2n + 2) {
+    flex-direction: column-reverse;
+  }
+}
+*/

@@ -1,0 +1,12 @@
+.header__button-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-h1);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  color: var(--text-color);
+  margin-right: 15px;
+}

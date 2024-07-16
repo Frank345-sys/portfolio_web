@@ -1,0 +1,24 @@
+.section {
+  padding: 90px 50px;
+  position: relative;
+}
+
+/*
+.section:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -4px;
+  height: 3px;
+  width: 50%;
+  border-radius: 2px;
+  background-color: #2d2e32;
+}
+*/
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 80px 40px 70px 40px;
+  }
+}

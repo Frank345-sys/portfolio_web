@@ -1,0 +1,9 @@
+.interactive-box_opacity-3 {
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .interactive-box_opacity-3 {
+    opacity: 0.1;
+  }
+}

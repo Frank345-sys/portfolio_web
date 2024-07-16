@@ -1,0 +1,206 @@
+/* Define variables en la raíz del documento */
+:root {
+  /*Tema claro*/
+  --background-color: #fff;
+  /*
+  --text-color: #3d3d3d;
+  --text-color: #595959;
+  */
+  --text-color: #46464e;
+  --title-color: #2d2d2d;
+
+  --text-color-btn-s: #2d2d2d;
+  --background-color-box: #fff;
+
+  /*Toggle*/
+  /*
+  --toggle-lm: #ffdf0d;
+  */
+  --toggle-lm: #888888;
+  --toggle-dm: #fff;
+  /*
+  --toggle-lm: #ffd000;
+  --toggle-dm: #f0eb9d;
+    */
+  /*--font-size-h1: 2.5rem;*/
+
+  /* Tamaños de fuente*/
+  --font-size-h1: 3.75rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-p: 1rem;
+  --font-size-a: 1rem;
+  --font-size-button: 1rem;
+
+  --font-size-icon: 2.5rem;
+
+  /*--font-size-h1: 2.8125rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.96875rem;
+  --font-size-p: 1.125rem;
+  --font-size-a: 1.125rem;
+  --font-size-button: 1.125rem;*/
+}
+
+/* Adaptación para dispositivos medianos (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    /*--font-size-h1: 2rem;*/
+    --font-size-h1: 3rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-p: 0.9rem;
+    --font-size-a: 0.9rem;
+    --font-size-button: 0.9rem;
+
+    --font-size-icon: 1.5rem;
+    /*
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.96875rem;
+    --font-size-h3: 1.6875rem;
+    --font-size-p: 1.0125rem;
+    --font-size-a: 1.0125rem;
+    --font-size-button: 1.0125rem;*/
+  }
+}
+
+/* Adaptación para dispositivos pequeños (smartphones) */
+@media (max-width: 768px) {
+  :root {
+    /*--font-size-h1: 1.75rem;*/
+    --font-size-h1: 2.625rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+    --font-size-p: 0.8rem;
+    --font-size-a: 0.8rem;
+    --font-size-button: 0.8rem;
+
+    --font-size-icon: 1.25rem;
+    /*
+    --font-size-h1: 1.96875rem;
+    --font-size-h2: 1.6875rem;
+    --font-size-h3: 1.40625rem;
+    --font-size-p: 0.9rem;
+    --font-size-a: 0.9rem;
+    --font-size-button: 0.9rem;*/
+  }
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+  --background-color: #1a1b1e;
+  /*
+  --text-color: #f2f2f2;
+  
+  */
+  --text-color: #d4d4d9;
+  --title-color: #ffffff;
+
+  --text-color-btn-s: #ffffff;
+  --background-color-box: #2d2e32;
+  /*--background-color: #16171b;*/
+  /*color: #a2a2a4;
+  --text-color: #ffffff;
+  */
+  /*Toggle*/
+  --toggle-lm: #283452;
+  --toggle-dm: #00a6ff;
+}
+
+/* Aplica las variables a los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  /*
+  background-image: url("https://cdn.prod.website-files.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+  background-position: 0 0;
+  background-size: 200px 200px;
+  */
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+h1 {
+  color: var(--title-color);
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  color: var(--title-color);
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  color: var(--title-color);
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  color: var(--title-color);
+}
+
+h5 {
+  color: var(--title-color);
+}
+
+/*
+span {
+  color: var(--title-color);
+}
+*/
+
+p {
+  font-size: var(--font-size-p);
+}
+
+li {
+  font-size: var(--font-size-p);
+}
+
+a {
+  font-size: var(--font-size-a);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/*
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+i {
+  color: rgba(135, 135, 135, 0.6);
+}
+*/

@@ -1,0 +1,22 @@
+.main__content {
+  height: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  max-width: 800px;
+  gap: 25px;
+
+  /*filter: drop-shadow(-2px 2px 15px rgba(255, 0, 0, 0.4));*/
+  /*backdrop-filter: blur(3px);*/
+  /*box-shadow: 0 0 100px red;*/
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .main__content {
+    align-self: center;
+  }
+}
+*/

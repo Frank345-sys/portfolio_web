@@ -1,0 +1,11 @@
+.nav-bar-pc {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-bar-pc li {
+  padding: 10px;
+  border-radius: 5px;
+}

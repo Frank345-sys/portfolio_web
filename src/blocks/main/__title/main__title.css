@@ -1,0 +1,17 @@
+.main__title {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.1;
+  /*backdrop-filter: blur(3px);*/
+  filter: drop-shadow(-2px 2px 15px rgba(255, 255, 255, 0.5));
+  /*backdrop-filter: blur(3px);*/
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .main-content__title {
+    text-align: unset;
+  }
+}
+*/

@@ -1,0 +1,19 @@
+.trajectory__timeline {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 105%;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #2d2e32;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .trajectory__timeline {
+    left: 0%;
+    width: 3px;
+  }
+}
