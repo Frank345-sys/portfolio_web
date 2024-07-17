@@ -1,7 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ modifier, content, icon, href, target, download }) => {
+const Button = ({
+  modifier,
+  content,
+  icon = "",
+  href = null,
+  target = null,
+  download = null,
+}) => {
   const className = `button ${modifier}`;
 
   if (href) {
@@ -28,13 +35,6 @@ Button.propTypes = {
   href: PropTypes.string,
   target: PropTypes.string,
   download: PropTypes.string,
-};
-
-Button.defaultProps = {
-  icon: "",
-  href: null,
-  target: null,
-  download: null,
 };
 
 export default Button;
