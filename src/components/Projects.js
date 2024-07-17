@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { projects } from "../utils/variables";
 import ScrollImage from "./ScrollImage";
+import Button from "./Button";
 
 function Projects() {
   return (
@@ -28,20 +29,20 @@ function Projects() {
                 ))}
               </div>
               <div className="content-buttons">
-                <a
-                  className="button button_primary"
+                <Button
+                  modifier="button_primary"
+                  content="Repositorio"
+                  icon={"bxl-github"}
                   href={project.repositorio}
                   target="_blank"
-                >
-                  Repositorio
-                </a>
-                <a
-                  className="button button_secundary"
+                />
+                <Button
+                  modifier="button_secundary"
+                  content="Visitar web"
+                  icon={"bx bx-world"}
                   href={project.enlace}
                   target="_blank"
-                >
-                  Sitio web
-                </a>
+                />
               </div>
             </div>
             <div className="project__images">
@@ -60,6 +61,24 @@ function Projects() {
     </section>
   );
 }
+
+/*
+<a
+                  className="button button_primary"
+                  href={project.repositorio}
+                  target="_blank"
+                >
+                  Repositorio
+                </a>
+
+<a
+                  className="button button_secundary"
+                  href={project.enlace}
+                  target="_blank"
+                >
+                  Sitio web
+                </a>
+*/
 
 /*
 <a

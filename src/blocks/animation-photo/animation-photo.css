@@ -175,7 +175,7 @@
     background-image: url("../sprites/thunder-frame-54.png");
   }
   to {
-    background-image: url("");
+    background-image: url("../sprites/transparent.png");
   }
 }
 

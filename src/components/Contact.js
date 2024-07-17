@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React from "react";
+import Button from "./Button";
 
 function Contact() {
   return (
@@ -10,22 +11,32 @@ function Contact() {
           Aunque actualmente no estoy realizando servicios freelance, estoy
           dispuesto a nuevas oportunidades laborales, ya que mi objetivo actual
           es encontrar un trabajo estable, mi bandeja de entrada siempre estará
-          abierta. Ya sea que tenga una pregunta o simplemente saludar, ¡haré
-          todo lo posible para responderle!
+          abierta. Ya sea que tenga una pregunta o simplemente quieras saludar,
+          ¡haré todo lo posible para responderle!
         </p>
         <p>
           <b>¡Gracias por visitar mi portafolio!</b>
         </p>
-        <a
-          className="button button_primary contact_margin-top"
+        <Button
+          modifier="button_primary contact_margin-top"
+          content="Contacto"
+          icon={"bxl-gmail"}
           href="mailto:francgonzalez456@gmail.com"
           target="_blank"
-        >
-          Contacto
-        </a>
+        />
       </div>
     </section>
   );
 }
 
 export default Contact;
+
+/*
+<a
+          className="button button_primary contact_margin-top"
+          href="mailto:francgonzalez456@gmail.com"
+          target="_blank"
+        >
+          Contacto
+        </a>
+*/

@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import InteractiveBox from "./InteractiveBox";
 import { boxes } from "../utils/variables";
 import Web_Developer_jr_Francisco_Gonzalez_2024 from "../utils/Web_Developer_jr_Francisco_Gonzalez_2024.pdf";
+import Button from "./Button";
 
 function Main() {
   return (
@@ -26,16 +27,26 @@ function Main() {
             Web Full Stack, con un enfoque particular en el front-end.
           </b>
         </p>
-        <a
-          className="button button_primary"
+        <Button
+          modifier="button_primary"
+          content="Descargar CV"
+          icon={"bx bxs-download"}
           href={Web_Developer_jr_Francisco_Gonzalez_2024}
-          download={"Web_Developer_jr_Francisco_Gonzalez_2024.pdf"}
-        >
-          Descargar CV
-        </a>
+          download="Web_Developer_jr_Francisco_Gonzalez_2024.pdf"
+        />
       </div>
     </main>
   );
 }
 
 export default Main;
+
+/*
+<a
+          className="button button_primary"
+          href={Web_Developer_jr_Francisco_Gonzalez_2024}
+          download={"Web_Developer_jr_Francisco_Gonzalez_2024.pdf"}
+        >
+          Descargar CV
+        </a>
+*/
