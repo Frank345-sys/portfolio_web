@@ -408,7 +408,7 @@ export const timeblocks = [
   {
     title: "Ingeniería en Sistemas Computacionales",
     subtitle: "Instituto Tecnológico Superior de Xalapa",
-    date: "2016 - 2022",
+    date: "Ag 2016 - sep 2022",
     description:
       "En mi carrera universitaria, descubrí el vasto mundo de la programación. Esta pasión me llevó a especializarme en Ingeniería de Software y a dedicarme plenamente a la programación.",
     skills: ["Java", "C/C++", "SQL"],
@@ -424,7 +424,7 @@ export const timeblocks = [
   {
     title: "Programa Desarrollo Web",
     subtitle: "Escuela TripleTen de desarrollo web",
-    date: "ENERO 2023 - JULIO 2024",
+    date: "Dic 2022 - Jul 2024",
     description:
       "Al avanzar mi formación autodidacta, me di cuenta de que necesitaba mejorar y ampliar mis conocimientos. Por ello, decidí inscribirme en el Programa de Desarrollo Web en TripleTen, un curso de diez meses que abarca HTML, CSS, JS, React, Node.js y otras skills clave para la creación de sitios y aplicaciones web, además este curso implica desarrollar proyectos basados en desafíos del mundo real.",
     skills: [
