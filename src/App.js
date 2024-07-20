@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../src/components/Header";
 import Main from "./components/Main";
 import Trajectory from "./components/Trajectory";
