@@ -141,8 +141,13 @@ const Recognitions = () => (
         </a>
       </li>
       <li>
-        <a className="info__link link link-animation">
-          Git y GitHub: Control de versiones en Proyectos Web (próximamente).
+        <a
+          className="info__link link link-animation"
+          href="https://s3.amazonaws.com/public-lessons.crehana.com/images/certificate/participation-pdf/f3224198/3d9d7622.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Git y GitHub: Control de versiones en Proyectos Web.
         </a>
       </li>
       <li>
