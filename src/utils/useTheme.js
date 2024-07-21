@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 
 const useTheme = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+    localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light"
   );
