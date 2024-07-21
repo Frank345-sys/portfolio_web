@@ -8,7 +8,11 @@ function Footer() {
         <p>Última actalización Julio 2024.</p>
         <ul className="footer__list">
           <li>
-            <a href="https://github.com/Frank345-sys" target="_blank">
+            <a
+              href="https://github.com/Frank345-sys"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="bx bxl-github"></i>
             </a>
           </li>
@@ -16,6 +20,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/francisco-omar-h-glez-utrera/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="bx bxl-linkedin-square"></i>
             </a>

@@ -1,12 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import useTheme from "../utils/useTheme";
 import Toggle from "../components/Toggle";
 
 function Header() {
   const menuRef = useRef(null);
-  const [theme, toggleTheme] = useTheme();
-  const [isDark, setIsDark] = useState(true);
+  const [theme, toggleTheme, changeThemeManual] = useTheme();
+
+  const [isDark, setIsDark] = useState(theme === "light" ? false : true);
+
+  const handleChange = useCallback((e) => {
+    if (e.matches) {
+      changeThemeManual("dark");
+    } else {
+      changeThemeManual("light");
+    }
+    setIsDark(e.matches);
+  }, []);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, [handleChange]);
 
   const handleChangeTheme = () => {
     setIsDark(!isDark);
@@ -16,28 +36,47 @@ function Header() {
   const [openAndCloseMenu, setOpenAndCloseMenu] = useState(true);
   const [showHeader, setShowHeader] = useState(true);
   const [showBoxShadow, setShowBoxShadow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0);
 
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      // Scrolling down
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > lastScrollY.current) {
       setShowHeader(false);
     } else {
-      // Scrolling up
       setShowHeader(true);
     }
-
     setShowBoxShadow(!window.scrollY > 0);
-
-    setLastScrollY(window.scrollY);
-  };
+    lastScrollY.current = window.scrollY;
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, [handleScroll]);
+
+  /*
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > lastScrollY) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+    setShowBoxShadow(!window.scrollY > 0);
+    setLastScrollY(window.scrollY);
   }, [lastScrollY]);
+
+  useEffect(() => {
+    console.log("Se ejecuto useEffect Header");
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+  */
 
   useEffect(() => {
     if (openAndCloseMenu) {

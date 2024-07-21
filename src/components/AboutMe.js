@@ -151,9 +151,9 @@ const Recognitions = () => (
         </a>
       </li>
       <li>
-        <a className="info__link link link-animation">
+        <p className="info__link link link-animation">
           Programa de desarrollo web TripleTen (próximamente).
-        </a>
+        </p>
       </li>
     </ul>
   </div>

@@ -44,7 +44,7 @@ const InteractiveBox = ({ content, opacityClass, initialTransform }) => {
       window.removeEventListener("resize", handleResize);
       clearTimeout(timer);
     };
-  }, [isSmallScreen, isWaitTime]);
+  }, [initialTransform, isSmallScreen, isWaitTime]);
 
   return (
     <div

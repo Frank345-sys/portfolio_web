@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 
 const useTheme = () => {
+  /*
+  const [themeDefauly, setThemeDefault] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+  const [theme, setTheme] = useState(themeDefauly ? "dark" : "light");
+  */
+
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
@@ -12,7 +19,11 @@ const useTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  return [theme, toggleTheme];
+  const changeThemeManual = (theme) => {
+    setTheme(theme);
+  };
+
+  return [theme, toggleTheme, changeThemeManual];
 };
 
 export default useTheme;
