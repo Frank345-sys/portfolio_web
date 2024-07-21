@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import useTheme from "../utils/useTheme";
 import Toggle from "../components/Toggle";
+import { Fade } from "react-awesome-reveal";
 
 function Header() {
   const menuRef = useRef(null);
@@ -102,38 +103,40 @@ function Header() {
         showBoxShadow ? "header_box-shadow-hidden" : ""
       }`}
     >
-      <div className="header__content">
-        <Toggle
-          isChecked={isDark}
-          hanleChangeTheme={handleChangeTheme}
-        ></Toggle>
-        <ul className="nav-bar-pc">
-          <li>
-            <a href="#main">
-              <b>Inicio</b>
-            </a>
-          </li>
-          <li>
-            <a href="#about-me">
-              <b>Sobre mi</b>
-            </a>
-          </li>
-          <li>
-            <a href="#trajectory">
-              <b>Trayectoria</b>
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <b>Proyectos</b>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <b>Contacto</b>
-            </a>
-          </li>
-        </ul>
+      <div className="header__content-pc">
+        <Fade>
+          <Toggle
+            isChecked={isDark}
+            hanleChangeTheme={handleChangeTheme}
+          ></Toggle>
+          <ul className="nav-bar-pc">
+            <li>
+              <a href="#main">
+                <b>Inicio</b>
+              </a>
+            </li>
+            <li>
+              <a href="#about-me">
+                <b>Sobre mi</b>
+              </a>
+            </li>
+            <li>
+              <a href="#trajectory">
+                <b>Trayectoria</b>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <b>Proyectos</b>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <b>Contacto</b>
+              </a>
+            </li>
+          </ul>
+        </Fade>
       </div>
 
       <div className="header__content-movil">

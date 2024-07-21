@@ -8,6 +8,8 @@
 
 @import url(../src/blocks/header/__content/header__content.css);
 
+@import url(../src/blocks/header/__content-pc/header__content-pc.css);
+
 @import url(../src/blocks/header/__button-menu/header__button-menu.css);
 
 @import url(../src/blocks/header/__content-movil/header__content-movil.css);

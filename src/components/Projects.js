@@ -14,7 +14,7 @@ function Projects() {
       <article className="projects__items">
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            <Fade cascade>
+            <Fade>
               <div className="project__description">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
@@ -48,17 +48,17 @@ function Projects() {
                   />
                 </div>
               </div>
-              <div className="project__images">
-                {project.images.map((img, imgIndex) => (
-                  <ScrollImage
-                    backgroundImage={img.img}
-                    imageHeight={img.imageHeight}
-                    imageName={img.imgName}
-                    key={imgIndex}
-                  />
-                ))}
-              </div>
             </Fade>
+            <div className="project__images">
+              {project.images.map((img, imgIndex) => (
+                <ScrollImage
+                  backgroundImage={img.img}
+                  imageHeight={img.imageHeight}
+                  imageName={img.imgName}
+                  key={imgIndex}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </article>
