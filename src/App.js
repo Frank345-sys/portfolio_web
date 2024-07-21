@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
       <AboutMe />
       <Trajectory />
       <Projects />
-      <Contact />
-      <Footer />
+      <Fade cascade>
+        <Contact />
+        <Footer />
+      </Fade>
     </div>
   );
 }

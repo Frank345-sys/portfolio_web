@@ -1,31 +1,34 @@
 import React from "react";
 import foto_perfil from "../images/foto-perfil-cv.jpg";
+import { Fade } from "react-awesome-reveal";
 
 const AboutMe = () => (
   <section id="about-me" className="section about-me">
     <div className="about-me__content">
       <h2 className="about-me__title">Sobre mi</h2>
     </div>
-    <div className="about-me__items">
-      <article className="info">
-        <div className="info__content">
-          <Presentation />
-        </div>
-      </article>
-      <article className="info">
-        <div className="info__content">
-          <Education />
-          <Skills />
-          <Languages />
-        </div>
-      </article>
-      <article className="info">
-        <div className="info__content">
-          <Aptitudes />
-          <Recognitions />
-        </div>
-      </article>
-    </div>
+    <Fade>
+      <div className="about-me__items">
+        <article className="info">
+          <div className="info__content">
+            <Presentation />
+          </div>
+        </article>
+        <article className="info">
+          <div className="info__content">
+            <Education />
+            <Skills />
+            <Languages />
+          </div>
+        </article>
+        <article className="info">
+          <div className="info__content">
+            <Aptitudes />
+            <Recognitions />
+          </div>
+        </article>
+      </div>
+    </Fade>
   </section>
 );
 

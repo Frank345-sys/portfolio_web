@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 1400px;
   display: grid;
-  align-self: center;
   /*
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   */

@@ -2,59 +2,62 @@ import React from "react";
 import { projects } from "../utils/variables";
 import ScrollImage from "./ScrollImage";
 import Button from "./Button";
-
+import { Fade } from "react-awesome-reveal";
 function Projects() {
   return (
     <section id="projects" className="section projects">
       <div className="projects__content">
         <h2>Proyectos destacados</h2>
       </div>
+
       <article className="projects__items">
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            <div className="project__description">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <ul className="list">
-                {project.points.map((point, pointIndex) => (
-                  <li key={pointIndex}>{point}</li>
-                ))}
-              </ul>
-              <h4>Skills aplicadas</h4>
-              <div className="skills">
-                {project.skills.map((skill, skillIndex) => (
-                  <span className="skills__skill" key={skillIndex}>
-                    {skill}
-                  </span>
+            <Fade cascade>
+              <div className="project__description">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <ul className="list">
+                  {project.points.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
+                <h4>Skills aplicadas</h4>
+                <div className="skills">
+                  {project.skills.map((skill, skillIndex) => (
+                    <span className="skills__skill" key={skillIndex}>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+                <div className="content-buttons">
+                  <Button
+                    modifier="button_primary"
+                    content="Repositorio"
+                    icon={"bxl-github"}
+                    href={project.repositorio}
+                    target="_blank"
+                  />
+                  <Button
+                    modifier="button_secundary"
+                    content="Visitar web"
+                    icon={"bx bx-world"}
+                    href={project.enlace}
+                    target="_blank"
+                  />
+                </div>
+              </div>
+              <div className="project__images">
+                {project.images.map((img, imgIndex) => (
+                  <ScrollImage
+                    backgroundImage={img.img}
+                    imageHeight={img.imageHeight}
+                    imageName={img.imgName}
+                    key={imgIndex}
+                  />
                 ))}
               </div>
-              <div className="content-buttons">
-                <Button
-                  modifier="button_primary"
-                  content="Repositorio"
-                  icon={"bxl-github"}
-                  href={project.repositorio}
-                  target="_blank"
-                />
-                <Button
-                  modifier="button_secundary"
-                  content="Visitar web"
-                  icon={"bx bx-world"}
-                  href={project.enlace}
-                  target="_blank"
-                />
-              </div>
-            </div>
-            <div className="project__images">
-              {project.images.map((img, imgIndex) => (
-                <ScrollImage
-                  backgroundImage={img.img}
-                  imageHeight={img.imageHeight}
-                  imageName={img.imgName}
-                  key={imgIndex}
-                />
-              ))}
-            </div>
+            </Fade>
           </div>
         ))}
       </article>

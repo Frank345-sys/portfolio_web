@@ -3,6 +3,7 @@ import InteractiveBox from "./InteractiveBox";
 import { boxes } from "../utils/variables";
 import Web_Developer_jr_Francisco_Gonzalez_2024 from "../utils/Web_Developer_jr_Francisco_Gonzalez_2024.pdf";
 import Button from "./Button";
+import { Fade } from "react-awesome-reveal";
 
 function Main() {
   return (
@@ -19,21 +20,23 @@ function Main() {
         ))}
       </div>
       <div className="main__content">
-        <h1 className="main__title">¡Bienvenidos a mi portafolio web!</h1>
-        <p className="main__description">
-          <b>
-            ¡Hola! Soy Francisco Omar H. González Utrea, Ingeniero en Sistemas
-            Computacionales y actualmente me estoy especializado en Desarrollo
-            Web Full Stack, con un enfoque particular en el front-end.
-          </b>
-        </p>
-        <Button
-          modifier="button_primary"
-          content="Descargar CV"
-          icon={"bx bxs-download"}
-          href={Web_Developer_jr_Francisco_Gonzalez_2024}
-          download="Web_Developer_jr_Francisco_Gonzalez_2024.pdf"
-        />
+        <Fade cascade>
+          <h1 className="main__title">¡Bienvenidos a mi portafolio web!</h1>
+          <p className="main__description">
+            <b>
+              ¡Hola! Soy Francisco Omar H. González Utrea, Ingeniero en Sistemas
+              Computacionales y actualmente me estoy especializado en Desarrollo
+              Web Full Stack, con un enfoque particular en el front-end.
+            </b>
+          </p>
+          <Button
+            modifier="button_primary"
+            content="Descargar CV"
+            icon={"bx bxs-download"}
+            href={Web_Developer_jr_Francisco_Gonzalez_2024}
+            download="Web_Developer_jr_Francisco_Gonzalez_2024.pdf"
+          />
+        </Fade>
       </div>
     </main>
   );
