@@ -3,6 +3,7 @@ import { projects } from "../utils/variables";
 import ScrollImage from "./ScrollImage";
 import Button from "./Button";
 import { Fade } from "react-awesome-reveal";
+
 function Projects() {
   return (
     <section id="projects" className="section projects">

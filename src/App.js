@@ -11,7 +11,9 @@ import { Fade } from "react-awesome-reveal";
 function App() {
   return (
     <div>
-      <Header />
+      <Fade>
+        <Header />
+      </Fade>
       <Main />
       <AboutMe />
       <Trajectory />
