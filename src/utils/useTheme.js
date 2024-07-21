@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 
 const useTheme = () => {
-  /*
-  const [themeDefauly, setThemeDefault] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"
   );
-  const [theme, setTheme] = useState(themeDefauly ? "dark" : "light");
-  */
-
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
