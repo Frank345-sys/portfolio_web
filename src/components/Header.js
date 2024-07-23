@@ -7,17 +7,19 @@ import { Fade } from "react-awesome-reveal";
 function Header() {
   const menuRef = useRef(null);
   const [theme, toggleTheme, changeThemeManual] = useTheme();
-
   const [isDark, setIsDark] = useState(theme === "light" ? false : true);
 
-  const handleChange = useCallback((e) => {
-    if (e.matches) {
-      changeThemeManual("dark");
-    } else {
-      changeThemeManual("light");
-    }
-    setIsDark(e.matches);
-  }, []);
+  const handleChange = useCallback(
+    (e) => {
+      if (e.matches) {
+        changeThemeManual("dark");
+      } else {
+        changeThemeManual("light");
+      }
+      setIsDark(e.matches);
+    },
+    [changeThemeManual]
+  );
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");

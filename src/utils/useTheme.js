@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const useTheme = () => {
   const [theme, setTheme] = useState(
@@ -14,6 +14,7 @@ const useTheme = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  /*
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
@@ -21,6 +22,14 @@ const useTheme = () => {
   const changeThemeManual = (theme) => {
     setTheme(theme);
   };
+  */
+  const toggleTheme = useCallback(() => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  }, []);
+
+  const changeThemeManual = useCallback((theme) => {
+    setTheme(theme);
+  }, []);
 
   return [theme, toggleTheme, changeThemeManual];
 };
