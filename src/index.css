@@ -40,6 +40,10 @@
 
 @import url(../src/blocks/interactive-boxes/_opacity-4/interactive-box_opacity-4.css);
 
+@import url(../src/blocks/background-gradient/background-gradient.css);
+
+@import url(../src/blocks/background-gradient/__gradient/background-gradient__gradient.css);
+
 @import url(../src/blocks/background-boxes/background-boxes.css);
 
 @import url(../src/blocks/main/main.css);

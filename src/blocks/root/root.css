@@ -12,6 +12,8 @@
   --text-color-btn-s: #2d2d2d;
   --background-color-box: #fff;
 
+  --background-color-gradient-1: #008080;
+  --background-color-gradient-2: #40e0d0;
   /*Toggle*/
   /*
   --toggle-lm: #ffdf0d;
@@ -98,6 +100,9 @@
 
   --text-color-btn-s: #ffffff;
   --background-color-box: #2d2e32;
+
+  --background-color-gradient-1: #ff6347;
+  --background-color-gradient-2: #ffa500;
   /*--background-color: #16171b;*/
   /*color: #a2a2a4;
   --text-color: #ffffff;

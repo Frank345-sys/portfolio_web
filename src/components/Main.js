@@ -1,9 +1,15 @@
 import React from "react";
 import InteractiveBox from "./InteractiveBox";
 import { boxes } from "../utils/variables";
-import Web_Developer_jr_Francisco_Gonzalez_2024 from "../utils/Web_Developer_jr_Francisco_Gonzalez_2024.pdf";
+import Web_Developer_jr_Francisco_Gonzalez_2024 from "../utils/Web_Developer_Jr._Francisco_Gonzalez_ats_2024.pdf";
 import Button from "./Button";
 import { Fade } from "react-awesome-reveal";
+
+/*
+<div className="background-gradient">
+        <div class="background-gradient__gradient"></div>
+      </div>
+*/
 
 function Main() {
   return (
