@@ -42,7 +42,7 @@ function Projects() {
                   <Button
                     modifier="button_secundary"
                     content="Visitar web"
-                    icon={"bx bx-world"}
+                    icon={"bx bx-link-external"}
                     href={project.enlace}
                     target="_blank"
                   />

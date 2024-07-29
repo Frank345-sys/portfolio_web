@@ -76,6 +76,8 @@
 
 @import url(../src/blocks/timeblock/__content/timeblock__content.css);
 
+@import url(../src/blocks/timeblock/__items/timeblock__items.css);
+
 @import url(../src/blocks/timeblock/__title/timeblock__title.css);
 
 @import url(../src/blocks/timeblock/__subtitle/timeblock__subtitle.css);

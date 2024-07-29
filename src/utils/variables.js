@@ -408,25 +408,42 @@ export const timeblocks = [
   {
     title: "Ingeniería en Sistemas Computacionales",
     subtitle: "Instituto Tecnológico Superior de Xalapa",
-    date: "Ag 2016 - sep 2022",
+    date: "Ago 2016 - Ene 2022",
     description:
       "En mi carrera universitaria, descubrí el vasto mundo de la programación. Esta pasión me llevó a especializarme en Ingeniería de Software y a dedicarme plenamente a la programación.",
     skills: ["Java", "C/C++", "SQL"],
+    classification: "bxs-graduation",
+  },
+  {
+    title: "Programador y Soporte TI",
+    subtitle: "CB Informática",
+    date: "Jun 2022 - Ago 2022",
+    description:
+      "Empresa de desarrollo de software que brinda soluciones TI principalmente ERPs y puntos de venta a pequeñas y medianas empresas locales de mi ciudad natal en donde me asignaron tareas de desarrollo y mantenimiento de código. Pero de finalizar mi periodo en la empresa me toco desarrollar una aplicación web para una veterinaria, y sin saberlo esa fue la chispa que cambiaria mi rumbo por completo.",
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ASP.NET Core básico",
+      "Bootstrap básico",
+    ],
+    classification: "bxs-briefcase",
   },
   {
     title: "Mi introducción al Desarrollo Web",
-    subtitle: "Cursos online",
+    subtitle: "Cursos online (crehana)",
     date: "2022 - 2023",
     description:
-      "Durante mi carrera como ingeniero, adquirí conocimientos en lenguajes de programación como Java y C/C++. Al ingresar al mundo laboral, descubrí el desarrollo web, lo que despertó en mí una nueva pasión y cambió mi rumbo por completo, llevándome a dedicarme a ello.",
+      "Al continuar mi trayecto como desarrollador y al adentrarme cada vez más al mundo del desarrollo web, despertó en mí una nueva pasión, llevándome a tomar la decisión de dedicarme a ello, por lo que decidí seguirme preparando, tome un empleo de medio tiempo en una tienda local y por las tardes me ponía a estuidiar.",
     skills: ["HTML5", "CSS3", "JavaScript"],
+    classification: "bxs-graduation",
   },
   {
     title: "Programa Desarrollo Web",
     subtitle: "Escuela TripleTen de desarrollo web",
     date: "Dic 2022 - Jul 2024",
     description:
-      "Al avanzar mi formación autodidacta, me di cuenta de que necesitaba mejorar y ampliar mis conocimientos. Por ello, decidí inscribirme en el Programa de Desarrollo Web en TripleTen, un curso de diez meses que abarca HTML, CSS, JS, React, Node.js y otras skills clave para la creación de sitios y aplicaciones web, además este curso implica desarrollar proyectos basados en desafíos del mundo real.",
+      "Al avanzar en mi formación autodidacta, me di cuenta de que necesitaba mejorar y ampliar mis conocimientos. Por ello, decidí inscribirme en el Programa de Desarrollo Web en TripleTen, un curso de diez meses que abarca HTML, CSS, JS, React, Node.js y otras skills clave para la creación de sitios y aplicaciones web, además este curso implica desarrollar proyectos basados en desafíos del mundo real.",
     skills: [
       "HTML5",
       "CSS3",
@@ -436,6 +453,7 @@ export const timeblocks = [
       "Express",
       "NoSQL",
     ],
+    classification: "bxs-graduation",
   },
 ];
 

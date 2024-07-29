@@ -8,22 +8,35 @@
   flex-direction: row-reverse;
 }
 
-.timeblock:nth-child(3n + 1) .timeblock__content {
+.timeblock:nth-child(2n + 1) .timeblock__content {
   padding-left: 60px;
 }
 
-.timeblock:nth-child(3n + 2) .timeblock__content {
+.timeblock:nth-child(2n + 2) .timeblock__content {
   padding-right: 60px;
 }
 
-.timeblock:nth-child(3n + 3) .timeblock__content {
-  padding-left: 60px;
+/*
+.timeblock:nth-child(2n + 1) .timeblock__content .timeblock__items {
+  border-radius: 6px;
+  border-left: 2px solid #3e3e42;
 }
+
+.timeblock:nth-child(2n + 2) .timeblock__content .timeblock__items {
+  border-radius: 6px;
+  border-right: 2px solid #3e3e42;
+}
+*/
 
 @media screen and (max-width: 768px) {
   .timeblock:nth-child(n) {
     flex-direction: row-reverse;
   }
+
+  .timeblock:nth-child(2n + 2) .timeblock__content {
+    padding-right: unset;
+  }
+
   .timeblock:nth-child(n) .timeblock__content {
     padding-left: 40px;
   }
