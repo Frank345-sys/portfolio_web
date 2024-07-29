@@ -65,7 +65,17 @@
   background-color: #3e3e42;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .timeblock__items {
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .timeblock__items {
+    padding: 15px 10px 15px 20px;
+  }
+
   .timeblock:nth-child(2n + 1) .timeblock__content .timeblock__items::after {
     border-top: 14px solid transparent;
     border-right: 14px solid #3e3e42;
