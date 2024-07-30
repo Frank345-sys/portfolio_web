@@ -2,4 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 90px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 80px 35px 80px 35px;
+  }
 }

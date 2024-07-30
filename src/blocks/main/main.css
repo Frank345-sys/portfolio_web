@@ -16,7 +16,7 @@
 @media screen and (max-width: 768px) {
   .main {
     align-items: unset;
-    max-height: 620px;
+    max-height: 640px;
     overflow: hidden;
   }
 }

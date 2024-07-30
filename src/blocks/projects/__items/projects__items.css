@@ -5,6 +5,12 @@
   gap: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .projects__items {
+    gap: 70px;
+  }
+}
+
 /*
 .projects__items .project:not(:last-child)::before {
   content: "";

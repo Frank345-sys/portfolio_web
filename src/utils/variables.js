@@ -547,7 +547,15 @@ export const projects = [
       "Implementé varias funcionalidades interactivas, como la edición de datos de usuario y la creación y gestión de tarjetas, utilizando una API que desarrollé con Node.js. Además, empleé MongoDB para almacenar y gestionar los datos de manera eficiente.",
       "Utilicé Git y GitHub para gestionar las versiones del proyecto.",
     ],
-    skills: ["HTML", "CSS", "React.js", "Node.js", "NoSQL", "Git"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "NoSQL",
+      "Git",
+    ],
     repositorio: "https://github.com/Frank345-sys/web_project_around_auth",
     enlace: "https://frank345-sys.github.io/web_project_around_auth/",
     images: [

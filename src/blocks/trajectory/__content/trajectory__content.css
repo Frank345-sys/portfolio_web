@@ -10,11 +10,11 @@
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .trajectory__content {
-    /*width: 100%;
+    width: 100%;
     text-align: center;
-    */
     padding-bottom: 40px;
   }
 }
+*/

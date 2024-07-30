@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function Contact() {
   return (
-    <section id="contact" className="section contact">
+    <section id="contact" className="contact">
       <div className="contact__content">
         <i className="bx bx-paper-plane contact__icon"></i>
         <h2>Pónganse en contacto</h2>
