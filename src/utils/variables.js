@@ -419,7 +419,7 @@ export const timeblocks = [
     subtitle: "CB Informática",
     date: "Jun 2022 - Ago 2022",
     description:
-      "Empresa de desarrollo de software que brinda soluciones TI principalmente ERPs y puntos de venta a pequeñas y medianas empresas locales de mi ciudad natal en donde me asignaron tareas de desarrollo y mantenimiento de código. Pero de finalizar mi periodo en la empresa me toco desarrollar una aplicación web para una veterinaria, y sin saberlo esa fue la chispa que cambiaria mi rumbo por completo.",
+      "Empresa de desarrollo de software que brinda soluciones TI principalmente ERPs y puntos de venta a pequeñas y medianas empresas locales de mi ciudad natal en donde me asignaron tareas de desarrollo y mantenimiento de código y antes de finalizar mi periodo en la empresa me toco desarrollar una aplicación web para una veterinaria, y sin saberlo esa fue la chispa que cambiaria mi rumbo por completo.",
     skills: [
       "HTML5",
       "CSS3",
